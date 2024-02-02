@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden; 
+}
+
+.backvideo {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  object-fit: cover; 
+  z-index: -1; 
+  filter: opacity(60%) blur(0px);
+  transition: 0.5s;
+}
+
+
+
+@keyframes logoOpacity {
+  0% {
+    opacity: 0.5; 
+    
+  }
+  50% {
+    opacity: 1; 
+   
+  }
+  100% {
+    opacity: 0.5; 
+   
+  }
+}
+
+
+
+
+.glow-on-hover {
+  width: 14vw;
+  height: 6vh;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #2f2f2f;
+  cursor: pointer;
+  position: absolute;
+  bottom: 18vh; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 0;
+  border-radius: 40px;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.glow-on-hover:hover{
+  background: #149900;
+}
+
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #00db25, #00db25, #00db25, #000, #000, #000, #000, #149900, #149900);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 40px;
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4a4545;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+  }
+  
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+  @keyframes logoAnimation {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  .logo {
+    position: absolute;
+    top: 26vh;
+    left: 35vw;
+    max-width: 30vw;
+    opacity: 1; 
+    animation: logoAnimation 2s ease-in-out ;
+    
+  }
+
+  .moving-dots {
+  position: absolute;
+  top: 26vh;
+  left: 35vw;
+  width: 30vw;
+  height: 30vh;
+}
+
+.dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.dot1 {
+  animation-name: moveDot1;
+}
+
+.dot2 {
+  animation-name: moveDot2;
+}
+
+.dot3 {
+  animation-name: moveDot3;
+}
+.dot4 {
+  animation-name: moveDot4;
+}
+
+
+@keyframes moveDot1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveDot2 {
+  0% {
+    top: 0;
+    left: 100%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 100%;
+  }
+}
+
+@keyframes moveDot3 {
+  0% {
+    top: 100%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 100%;
+    left: 0;
+  }
+}
+
+@keyframes moveDot4 {
+  0% {
+    top: 100%;
+    left: 100%;
+  }
+  50% {
+    top: 50%;
+    left: 50%; 
+  }
+  100% {
+    top: 100%;
+    left: 100%; 
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .glow-on-hover {
+    width: 40vw; 
+    height: 6vh; 
+    font-size: 12px; 
+  }
+  .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .moving-dots {
+    position: absolute;
+    top: 23vh;
+    left: 35vw;
+    width: 30vw;
+    height: 30vh;
+  }
+  .logo {
+    position: absolute;
+    top: 29vh;
+    left: 20vw;
+    max-width: 60vw;
+    opacity: 1; 
+     animation: logoAnimation 2s ease-in-out ;
+    
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width:600px) {
+
+  .glow-on-hover {
+    width: 35vw; 
+    height: 6vh; 
+    font-size: 12px; 
+  }
+
+  .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .moving-dots {
+    position: absolute;
+    top: 23vh;
+    left: 35vw;
+    width: 30vw;
+    height: 30vh;
+  }
+  .logo {
+    position: absolute;
+    top: 29vh;
+    left: 26vw;
+    max-width: 50vw;
+    opacity: 1; 
+     animation: logoAnimation 2s ease-in-out ;
+    
+  }
+}
+@media screen and (min-width: 601px) and (max-width:899px) {
+
+
+  .moving-dots {
+    position: absolute;
+    top: 24vh;
+    left: 35vw;
+    width: 30vw;
+    height: 30vh;
+  }
+  .logo {
+    position: absolute;
+    top: 29vh;
+    left: 30vw;
+    max-width: 40vw;
+    opacity: 1; 
+     animation: logoAnimation 2s ease-in-out ;
+    
+  }
+  .glow-on-hover {
+    width: 35vw; 
+    height: 6vh; 
+    font-size: 12px; 
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width:1200px) {
+  .moving-dots {
+    position: absolute;
+    top: 22vh;
+    left: 35vw;
+    width: 30vw;
+    height: 30vh;
+  }
+}
