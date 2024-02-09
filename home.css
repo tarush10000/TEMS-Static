@@ -131,7 +131,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
     z-index: 20; 
 }
 
@@ -233,7 +232,9 @@ body{
     }  
     #hlogo > a > img{
       width : 15vh;
-      margin: 0px;
+    }
+    #hlogo{
+      margin-left: 5px
     }
     #htext > a >p {
       font-size: 1em;
