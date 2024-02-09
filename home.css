@@ -154,16 +154,13 @@ body{
 }
 
 #htext > a > p {
+  margin: 0 auto; 
   font-family: 'Poppins';
-  font-weight: 100;
+  font-size: 1.25em;
+  font-weight: 120;
   color: white;
   text-align: center;
 }
-.text-center{
-  font-weight: bolder;
-  font-size: 1.25em;
-}
-
   .hmenu{
     position: fixed;
     top: 1vh;
@@ -957,6 +954,10 @@ body{
 #About h1 {
   font-size: 5.5vw;
 }
+#htext > a > p {
+  position: relative;
+  left: 10px;
+}
 
 #domain-title {
   font-size: 40px;
@@ -1559,6 +1560,10 @@ section.special header.major h2:after {
 @media screen and (max-width: 400px){
   .container2{
     flex-direction: column;
+  }
+  #htext > a > p {
+    position: relative;
+    left: 20px;
   }
 
   .image2{
