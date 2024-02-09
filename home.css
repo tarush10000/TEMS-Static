@@ -122,23 +122,51 @@ body{
     color: white;
   }
 
-  #hlogo{
+  #hlogo {
     position: absolute;
     top: 0;
+    width: 100%;
     left: 0;
     margin: 10px;
-  }
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 20; 
+}
 
-  #hlogo > img{
-    width: 12vh;
-  }
+#hlogo > a > img {
+    height: 6vh;
+    width: auto;
+}
 
+#htext{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  margin: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 0px;
+}
+
+#htext > a > p {
+  margin: 0 auto; 
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
   .hmenu{
     position: fixed;
     top: 1vh;
     right: 1vw;
     margin: 10px;
-    z-index: 15;
+    z-index: 25;
   }
 
   .hmenu > i{
@@ -164,6 +192,9 @@ body{
       font-size: 1.5em;
       width: 30vw;
       left: 35vw;
+    }
+    #htext > a> p {
+      font-size: 1.2em;
     }
   }
   
@@ -199,6 +230,12 @@ body{
     .bgvideo{
       position: absolute;
       bottom: 20;
+    }  
+    #hlogo > a > img{
+      width : 15vh;
+    }
+    #htext > a >p {
+      font-size: 1em;
     }
   
   }
@@ -1404,8 +1441,7 @@ section.special header.major h2:after {
 
 .card2{
   width: 17vw;
-  height:39vh;
-  overflow: hidden;
+  height:55vh;
   background-color: transparent;
   border: none;
 }
@@ -1413,7 +1449,7 @@ section.special header.major h2:after {
 .card__2{
   position: relative;
   width: 15vw;
-  height:36vh;
+  height:40vh;
   border-radius: 23px;
   justify-content: center;
   align-content: center;
@@ -1430,7 +1466,7 @@ section.special header.major h2:after {
 .image2{
   position: relative;
   width: 12.5vw;
-  height: 16.67vw;
+  height: 15.67vw;
   border-radius: 5%;
   margin: 0 auto;
   transition: all 1s ease;
@@ -1440,7 +1476,7 @@ section.special header.major h2:after {
 
 .card-img2{
   width: 12.5vw;
-  height: 16.67vw;
+  height: 15.67vw;
   object-fit: cover;
   object-position: center;
   border-radius: 10%;
@@ -1451,6 +1487,7 @@ section.special header.major h2:after {
 .content2{
   padding-top: 5px;
   padding-bottom: 10px;
+  height: auto;
   position: relative;
   margin: 0 auto;
   transition: all 1s ease;
@@ -1856,6 +1893,11 @@ section.special header.major h2:after {
   color:rgb(206, 205, 205);
 }
 
+#SW{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
 
 /* Footer CSS ends */
 
