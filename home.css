@@ -149,7 +149,7 @@ body{
   justify-content: center;
   align-items: center;
   z-index: 10;
-  top: 0px;
+  top: 13px;
 }
 
 #htext > a > p {
@@ -959,7 +959,6 @@ body{
 #htext > a > p {
   position: relative;
   left: 10px;
-  font-weight: bold;
 }
 
 #domain-title {
