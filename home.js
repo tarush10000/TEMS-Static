@@ -103,7 +103,7 @@ let menuElt = document.getElementsByClassName("menu-elt");
 for (let x=0;x<menuElt.length;x++){
     menuElt[x].onclick= function () {
     sideMenu.classList.toggle("open-menu");
-  }
+  }
 }
 
 // Home Section end
