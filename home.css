@@ -231,6 +231,9 @@ body{
       position: absolute;
       bottom: 20;
     }  
+    #hlogo{
+      margin-top: 15px;
+    }
     #hlogo > a > img{
       width : 13vh;
       height: auto;
