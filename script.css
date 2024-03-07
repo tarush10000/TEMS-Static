@@ -44,11 +44,11 @@ body {
   justify-content: flex-end;
   z-index: 10;
   top: 15px;
-  
+
 }
 
 #htext > a > p {
-  margin: 0 auto; 
+  margin: 0 20px; 
   font-family: 'Poppins';
   font-size: 1.25em;
   font-weight: 120;
