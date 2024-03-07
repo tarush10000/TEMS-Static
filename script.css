@@ -44,7 +44,7 @@ body {
   justify-content: flex-end;
   z-index: 10;
   top: 15px;
-
+  overflow: hidden;
 }
 
 #htext > a > p {
