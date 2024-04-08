@@ -1,0 +1,17 @@
+{
+    "name": "IEEE TEMS VIT",
+    "short_name": "IEEETEMSVIT",
+    "description": "IEEE Technology and Engineering Management Society (TEMS) Chapter at VIT Vellore aims to foster innovation and leadership in technology and engineering management.",
+    "start_url": "https://ieeetems.in/",
+    "display": "standalone",
+    "background_color": "rgb(22, 22, 22)",
+    "theme_color": "#227733",
+    "icons": [
+      {
+        "src": "logo.webp",
+        "sizes": "701x337",
+        "type": "image/webp"
+      }
+    ]
+  }
+  
