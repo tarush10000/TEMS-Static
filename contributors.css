@@ -15,7 +15,7 @@
   margin-top: 50px;
 }
 
-.contributors h1 {
+.contributors h2 {
   letter-spacing: -1px;
   font-size: 50px;
   text-align: center;
@@ -34,8 +34,8 @@
   border-radius: 50%;
 }
 
-.design h1 span,
-.developers h1 span {
+.design h2 span,
+.developers h2 span {
   color: #67F410;
 }
 
@@ -70,7 +70,7 @@
 
 
 @media (max-width: 1060px) {
-  .contributors h1 {
+  .contributors h2 {
     font-size: 55px;
   }
 
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: 767px) {
-  .contributors h1 {
+  .contributors h2 {
     font-size: 40px;
   }
 
@@ -107,7 +107,7 @@
     width: 50%; 
   }
 
-  .contributors h1 {
+  .contributors h2 {
     font-size: 30px;
   }
 

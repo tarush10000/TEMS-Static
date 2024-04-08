@@ -718,7 +718,7 @@ body{
 /* contact section ends */
 
 /* Memories section starts */
-#Memories h1{
+#Memories h2{
   position: relative;
   color: white;
   text-align: center;
@@ -879,7 +879,7 @@ body{
   padding: 20 40 20 40 ;
 }
 
-#About h1 {
+#About h2 {
   text-align: center;
   color: white;
   font-size: 3.6vw;
@@ -958,7 +958,7 @@ body{
 }
 
 @media screen and (max-width: 550px) {
-#About h1 {
+#About h2 {
   font-size: 5.5vw;
 }
 #htext > a > p {
@@ -1624,7 +1624,7 @@ section.special header.major h2:after {
   border-radius: 20px;
   text-align: center;
 }
-.event-description-content h1{
+.event-description-content h2{
   margin-bottom: 25px;
 }
 .descriptionBx{

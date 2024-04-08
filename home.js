@@ -1,6 +1,3 @@
-window.addEventListener('load', (event) => {
-  window.scrollTo(0, 0); 
-});
 //Blog Section start
 
 $(".option").click(function () {
