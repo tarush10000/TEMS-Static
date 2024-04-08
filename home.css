@@ -132,7 +132,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    z-index: 20; 
+    z-index: 20;
 }
 
 #hlogo > a > img {
@@ -228,6 +228,8 @@ body{
       height: 100vh;
     }
     .bgvideo{
+      height: 100svh;
+      width: auto;
       position: absolute;
       bottom: 20;
     }  
