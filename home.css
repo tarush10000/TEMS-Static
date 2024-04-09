@@ -879,12 +879,15 @@ body{
 .about-main {
   box-shadow: 0 0 50px 0 rgba(19, 135, 19, 0.8);
   padding: 20 40 20 40 ;
+  margin-top: 50px;
+  padding: 10px;
 }
 
 #About h2 {
   text-align: center;
   color: white;
   font-size: 3.6vw;
+  margin-top: 10px;
 }
 
 #About span {
@@ -1657,7 +1660,9 @@ section.special header.major h2:after {
     align-items: center;
     cursor: pointer;
 }
-
+.container1 .event-icon{
+  margin-left: 10px;
+}
 .container1 .event-icon .imgBx{
     position: absolute;
     width: 80px;
